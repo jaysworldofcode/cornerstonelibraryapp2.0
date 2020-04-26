@@ -4,7 +4,7 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import './css/global_style_sheet.css';
 import DownloadedIcon from './assets/icons.js';
-import logo from 'C:/Users/RPA-06/Desktop/Git Repos/CornerstoneLibraryApp/src/Book/testbooklet/cover.png';
+import logo from './Book/testbooklet/cover.png';
 import Books from './Books';
 import ReadBook from './ReadBook';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import './css/global_style_sheet.css';
-import logo from 'C:/Users/RPA-06/Desktop/Git Repos/CornerstoneLibraryApp/src/Book/testbooklet/cover.png';
+import logo from './Book/testbooklet/cover.png';
 import ReactDOM from 'react-dom';
 import ViewBook from './ViewBook';
 
