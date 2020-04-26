@@ -1,0 +1,72 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Row } from 'react-bootstrap';
+import { Col } from 'react-bootstrap';
+import { Container } from 'react-bootstrap';
+import DownloadedIcon from './assets/icons.js';
+import Discipleship from './Discipleship';
+
+export default class Menu extends React.Component {
+
+    constructor(props) {
+        super(props);
+    };
+    Go_to_discpleship(){
+        ReactDOM.render(<Discipleship />, document.getElementById('root'));
+    }
+    render() {
+        return (
+        <Container className='menuContainer' >
+        <Row className='menuRow'>
+            <Col className='menuCol' onClick={this.Go_to_discpleship}>    
+                <div id='centerStuff'>
+                    {new DownloadedIcon().DiscipleshipIcon()}    
+                    <br/>
+                    DISCPLESHIP
+                </div>
+            </Col>
+            <Col className='menuCol'>
+                {new DownloadedIcon().ToolIcon()}    
+                <br/>
+                EVANGELISM TOOLS
+            </Col>
+        </Row>
+        <Row className='menuRow'>
+            <Col className='menuCol'>                
+                {new DownloadedIcon().SermonIcon()}    
+                <br/>
+                SERMONS
+            </Col>
+            <Col className='menuCol'>
+                {new DownloadedIcon().PodcastsIcon()}    
+                <br/>
+                PODCASTS
+            </Col>
+        </Row>
+        <Row className='menuRow'>
+            <Col className='menuCol'>
+                {new DownloadedIcon().CalenderIcon()}    
+                <br/>
+                EVENTS/CALENDER
+            </Col>
+            <Col className='menuCol'>
+                {new DownloadedIcon().DevotionalIcon()}    
+                <br/>
+                DEVOTIONAL
+            </Col>
+        </Row>
+        <Row className='menuRow'>
+            <Col className='menuCol'>
+                {new DownloadedIcon().ContactUsIcon()}    
+                <br/>
+                CONTACT US</Col>
+            <Col className='menuCol'>
+                {new DownloadedIcon().GiveIcon()}    
+                <br/>
+                GIVE</Col>
+        </Row>
+        </Container>    
+        );
+    }
+}

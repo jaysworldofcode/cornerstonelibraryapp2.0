@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'Rubik', sans-serif;
+    background-color: white;
+}
+#root {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: white;
+}
+*:focus {
+    outline: none !important;
+}
+.create-full-width-style {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.title{
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-weight: 100;
+}
+.menuCol {
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    width: 25%;
+    height: 100%;
+}
+.menuRow {
+    height: 25%;
+}
+.menuContainer {
+    position: absolute;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    width: 100%;
+    height: 91%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 100;
+}
+.menu-icon {
+    width: 30%;
+    height: 30%;
+}
+#message-title {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#banner {
+    background-image: url('../assets/Images/banner.png');
+    background-size: cover;
+    color: white;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+#book-header {
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#view-book-image {
+    text-align: center;
+}
+#view-book-image img{
+    border-radius: 10px;
+    -webkit-box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
+    -moz-box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
+    box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
+}
+#view-book-read-bt{
+    background-color: #007bff;
+    width: 200px;
+    padding: 6px 6px 6px 6px;
+    margin: 20px 40px 10px 10px;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 12px;
+}
+#view-book-header {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+}
+.book-type-badge-custom {
+    background-color: #fcf4cc;
+    color: #abb334;
+    text-align: center;
+    width: 60px;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 4px 2px 4px;
+}
+.view-book-type-badge-custom {
+    background-color: #fcf4cc;
+    color: #abb334;
+    text-align: left;
+    width: 60px;
+    border-radius: 4px;
+    margin: 4px;
+    padding: 2px 4px 2px 4px;
+}
+#view-book-description {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 200;
+    padding-top: 20px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+#book-writer {
+    font-size: 10px;
+    font-weight: 100;
+    color: gray;
+}
+#view-book-writer {
+    font-size: 10px;
+    font-weight: 100;
+    color: gray;
+    text-align: left;
+    padding-left: 20px;
+}
+#book {
+    font-size: 10px;
+    /* border-bottom: 0.2px solid #ededed; 
+    padding-left: 5%;
+    padding-right: 5%;
+    */
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    font-weight: 100;
+    border-radius: 10px;
+    -webkit-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.07);
+    -moz-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.07);
+    box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.07);
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+#banner-home{
+    background-image: url('../assets/Images/home-bg-banner.png');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    border-bottom-left-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 10px;
+}
+#banner-home img {
+    padding-top: 5%;
+}
+#home-new-content{
+    margin-left: 5px;
+    margin-right: 5px;
+    border-bottom: 0.2px solid #f5f5f5;
+}
+#home-header {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#home-content {
+    font-size: 10px;
+    font-weight: 100;
+    padding-top: 10px;
+}
+li#book-type{
+    text-align: left;
+    padding-top: 8px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+li#view-book-type{
+    padding-top: 8px;
+    padding-left: 10px;
+    font-weight: 400;
+    color: #5c5c5c;
+}
+li#book-view {
+    background-color: #007bff;
+    width: 100px;
+    padding: 6px 6px 6px 6px;
+    margin: 10px 10px 10px 0;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    font-size: 8px;
+}
+#home-new-content img{
+    width: 50px;
+    height: 50px;
+    padding: 0px;
+}
+#home-new-content #image-content{
+    margin-top: 4%;
+    text-align: center;
+    margin-right: -50%;
+}
+#banner-home #profile{
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+}
+#personal-info{
+    padding: 10%;
+}
+.title-login{
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 14;
+    font-weight: 100;
+    color: white;
+}
+#menu-container{
+    position: fixed;
+    width: 100%;
+    height: 93%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+#menu-container table{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+#cell{
+    width: 25%;
+    height: 25%;
+    font-size: 10px;
+    font-weight: 100;
+}
+#specific-content-verse{
+    font-family: 'Handlee', cursive;
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#specific-verse{
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+#specific-content-message{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+p {
+    text-align: justify;
+    text-justify: inter-word;  
+}
+#sermons-content-description{
+    font-size: 14px;
+    font-weight: 300;
+}
+#name-title{
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+}
+#sermons-content-title{
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+#sermons-content-icon-button{
+    border-top: 0.2px solid #ededed;
+}
+#sermons-content-icon-button{
+    border-top: 0.2px solid #ededed;
+}
+#sermons-content{
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.form-control #login-username{
+    border-radius: 25px;
+}
+.login-form{
+    border-top: 0.2px solid #ededed;
+}
+.circle {
+    height: 300px;
+    width: 100%;
+    border-bottom-left-radius: 25px;
+    background-color: #007bff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-image: url('../assets/Images/banner.png');
+    background-size: cover;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-bottom: 0.2px solid #ededed;
+}
+#evangelism-tools-content {
+    height: 50px;
+    padding-left: 20px;
+    border-bottom: 0.2px solid #ededed;
+}
+.navTitle {
+    font-weight: 700;
+    font-size: 40px;
+    padding-left: 20px;
+}
+.user {
+    font-weight: 100;
+    font-size: 14px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+div.TopNavContainer {
+    background-color: white;
+    /* position: fixed;
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1), 0 1px 20px 0 rgba(0, 0, 0, 0.1);
+    top: 0;
+    width: 100%; */
+}
+.BooksContainer {
+    width: 100%;
+    background-color: white;
+}
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%)
+ }
+#book img {
+    border-radius: 10px;
+}
+.back-button {
+    padding-left: 20px;
+    padding-right: 10px;
+}
+.view-book-content {
+    text-align: left;
+    margin: 0;
+}
+.read-book-content {
+    height: 80vh;
+}
+.read-book-content img{
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+}
+.read-book-footer {
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    font-size: 10px;
+    padding-top: 20px;
+}
