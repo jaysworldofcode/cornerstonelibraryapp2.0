@@ -398,8 +398,6 @@ div.TopNavContainer {
 }
 .profile p{
     padding: 4px 0 4px 0;
-    text-align: center;
-    background-color: #f5f5f5;
     font-weight: 200;
     font-size: 12px;
     width: 160px;
@@ -412,6 +410,5 @@ div.TopNavContainer {
     font-size: 16px;
     font-weight: 200;
     width: 160px;
-    background-color: #f5f5f5;
     text-align: center;
 }
