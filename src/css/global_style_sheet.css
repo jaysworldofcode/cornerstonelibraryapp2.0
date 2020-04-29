@@ -26,6 +26,8 @@ body{
     margin-left: 20px;
     margin-bottom: 20px;
     font-family: 'Rubik', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
 }
 .title{
     padding-top: 20px;
@@ -390,6 +392,26 @@ div.TopNavContainer {
     font-size: 10px;
     padding-top: 20px;
 }
-.tester {
+.profile {
+    margin: 10px 0 0 20px;
+    color: #9c9c9c;
+}
+.profile p{
+    padding: 4px 0 4px 0;
+    text-align: center;
+    background-color: #f5f5f5;
+    font-weight: 200;
+    font-size: 12px;
+    width: 160px;
+    border-radius: 25px;
     font-family: 'Rubik', sans-serif;
+}
+.dropdown {
+    margin-left: 40px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    width: 160px;
+    background-color: #f5f5f5;
+    text-align: center;
 }

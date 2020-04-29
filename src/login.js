@@ -21,7 +21,6 @@ class login extends React.Component {
      }
     };
     LoginAccount(){
-      {/** ReactDOM.render(<BottomNav />, document.getElementById('navbar')); **/}
       ReactDOM.render(<Books username={'John Doe'} />, document.getElementById('root'));
     }
     render() {

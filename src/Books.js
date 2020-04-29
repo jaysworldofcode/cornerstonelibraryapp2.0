@@ -2,9 +2,9 @@ import React from 'react';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import './css/global_style_sheet.css';
-import { Form } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import ViewBook from './ViewBook';
+import DownloadedIcon from './assets/icons.js';
 
 export default class Books extends React.Component {
 
@@ -12,8 +12,10 @@ export default class Books extends React.Component {
         super(props);
 
         this.state = {
-            isShouldAddMargin: false
-          }
+            isShouldAddMargin: false,
+            open: false
+        }
+        this.handleButtonClick = this.handleButtonClick.bind(this);
     };
     ViewBook(SetBookPath){
         ReactDOM.render(<ViewBook BookPath={SetBookPath}/>, document.getElementById('root'));
@@ -37,12 +39,36 @@ export default class Books extends React.Component {
                             </ul>
                             </Col>
                         </Row>
-    }  
+    }
+    handleButtonClick(){
+        this.setState(state => {
+            return {
+              open: !state.open,
+            };
+          });
+    }
     render() {
         const data = require('./Book/books.json');
         return (
             <div className='BooksContainer' style={{backgroundColor:'white'}}>
                 <div className='TopNavContainer' ref={ (divElement) => { this.divElement = divElement } }>
+                    <Row >
+                        <Col className='profile'>
+                            <p onClick={this.handleButtonClick}>{new DownloadedIcon().ProfileIcon()}  Howdy, John Doe</p>
+                        </Col>
+                    </Row>
+                    <Row>
+                    <Col>
+                        {this.state.open && (
+                            <div class="dropdown">
+                            <ul>
+                                <li>MY POINTS</li>
+                                <li>LOGOUT</li>
+                            </ul>
+                            </div>
+                        )}
+                        </Col>
+                    </Row>
                     <Row style={{marginTop:'80px'}}>
                         <Col>
                             <p className='navTitle'>Bookshelf</p>
