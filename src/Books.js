@@ -2,7 +2,7 @@ import React from 'react';
 import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import './css/global_style_sheet.css';
-import logo from './Book/pagtulunan/cover.png';
+import { Form } from 'react-bootstrap';
 import ReactDOM from 'react-dom';
 import ViewBook from './ViewBook';
 
@@ -38,14 +38,6 @@ export default class Books extends React.Component {
                             </Col>
                         </Row>
     }  
-    setBooks(){
-        const data = require('./Book/books.json');
-
-          data.map(function(item, i){
-            console.log(item);
-          }); 
-          console.log('tester');
-    }
     render() {
         const data = require('./Book/books.json');
         return (
@@ -56,8 +48,12 @@ export default class Books extends React.Component {
                             <p className='navTitle'>Bookshelf</p>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col>
+                            <input type="text" placeholder="Search" className="search-textfield-books"/>
+                        </Col>
+                    </Row>
                 </div>
-                {this.setBooks()}
                 {data.map((value, index) => {
                     return this.NewBook(value) 
                 })}

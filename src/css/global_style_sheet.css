@@ -16,6 +16,17 @@ body{
     margin-left: 10%;
     margin-right: 10%;
 }
+.search-textfield-books {
+    width: 88%;
+    height: 40px;
+    padding-left: 20px;
+    border-radius: 25px;
+    border:0px solid #f5f5f5; 
+    background-color: #f5f5f5;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-family: 'Rubik', sans-serif;
+}
 .title{
     padding-top: 20px;
     text-align: center;
@@ -62,7 +73,7 @@ body{
 }
 #book-header {
     font-family: 'Rubik', sans-serif;
-    font-size: 20px;
+    font-size: 14px;
     font-weight: bold;
     padding-top: 10px;
 }
@@ -75,17 +86,24 @@ body{
     -moz-box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
     box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
 }
+#view-book-read-bt span{
+    color: white;
+    font-weight: 200;
+}
 #view-book-read-bt{
     background-color: #007bff;
-    width: 200px;
+    width: 30%;
     padding: 6px 6px 6px 6px;
-    margin: 20px 40px 10px 10px;
+    margin: 10px 20px 10px 20px;
     text-align: center;
     color: white;
     border-radius: 50px;
     font-family: 'Rubik', sans-serif;
     font-weight: 100;
     font-size: 12px;
+    -webkit-box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
+    -moz-box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
+    box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
 }
 #view-book-header {
     font-family: 'Rubik', sans-serif;
@@ -102,7 +120,7 @@ body{
     width: 60px;
     border-radius: 4px;
     margin: 4px;
-    padding: 2px 4px 2px 4px;
+    padding: 2px 0 2px 0;
 }
 .view-book-type-badge-custom {
     background-color: #fcf4cc;
@@ -117,18 +135,18 @@ body{
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     font-weight: 200;
-    padding-top: 20px;
+    padding-top: 10px;
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
 }
 #book-writer {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 100;
     color: gray;
 }
 #view-book-writer {
-    font-size: 10px;
+    font-size: 12px;
     font-weight: 100;
     color: gray;
     text-align: left;
@@ -146,9 +164,9 @@ body{
     margin-bottom: 4px;
     font-weight: 100;
     border-radius: 10px;
-    -webkit-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.07);
-    -moz-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.07);
-    box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.07);
+    -webkit-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.09);
+    -moz-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.09);
+    box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.09);
 }
 ul {
     list-style-type: none;
@@ -348,8 +366,11 @@ div.TopNavContainer {
     border-radius: 10px;
 }
 .back-button {
-    padding-left: 20px;
-    padding-right: 10px;
+    padding-top: 10px;
+    height: 40px;
+}
+.back-button span{
+    padding-left: 10px;
 }
 .view-book-content {
     text-align: left;
@@ -368,4 +389,7 @@ div.TopNavContainer {
     text-align: center;
     font-size: 10px;
     padding-top: 20px;
+}
+.tester {
+    font-family: 'Rubik', sans-serif;
 }

@@ -7,7 +7,6 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import { Container } from 'react-bootstrap';
 import Books from './Books';
-import logo from './assets/Images/logo-shadow.png';
 import { withStyles } from '@material-ui/core/styles';
 import ButtonMaterialUI from '@material-ui/core/Button';
 import { purple } from '@material-ui/core/colors';
@@ -55,7 +54,7 @@ class login extends React.Component {
         <Row>
           <Col>
           <center>
-            <img src={logo} />
+            {/* <img src={logo} /> */}
           </center>
           <br />
           <Form style = {{ paddingTop: '20%'}}>

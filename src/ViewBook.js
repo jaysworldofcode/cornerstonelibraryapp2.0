@@ -4,7 +4,6 @@ import { Row } from 'react-bootstrap';
 import { Col } from 'react-bootstrap';
 import './css/global_style_sheet.css';
 import DownloadedIcon from './assets/icons.js';
-import logo from './Book/pagtulunan/cover.png';
 import Books from './Books';
 import ReadBook from './ReadBook';
 
@@ -12,12 +11,14 @@ export default class ViewBook extends React.Component {
 
     constructor(props) {
         super(props);
+
+        this.Read = this.Read.bind(this);
     };
     Back(){
-        ReactDOM.render(<Books username={'John Doe'} />, document.getElementById('root'));
+        ReactDOM.render(<Books BookPath={this.props.BookPath} />, document.getElementById('root'));
     }
     Read(){
-        ReactDOM.render(<ReadBook />, document.getElementById('root'));
+        ReactDOM.render(<ReadBook BookPath={this.props.BookPath}/>, document.getElementById('root'));
     }
     render() {
         const BookDetails = require('./Book/'+this.props.BookPath+'/info.json');
@@ -25,7 +26,7 @@ export default class ViewBook extends React.Component {
             <div style={{backgroundColor:'white'}}>
                 <div style={{backgroundColor:'white'}}>
                     <Row>
-                        <Col className='back-button' onClick={this.Back} >
+                        <Col className='back-button' onClick={this.Back.bind(this)} >
                             <span>{new DownloadedIcon().BackIcon()}</span>
                         </Col>
                     </Row>
@@ -37,12 +38,12 @@ export default class ViewBook extends React.Component {
                                 </li>
                                 <li id='view-book-header'>{BookDetails['BookTitle']}</li>
                                 <li id='view-book-writer'>Author: {BookDetails['Writer']}</li>
+                                <li id='view-book-read-bt' onClick={this.Read}><span>READ NOW</span></li>
                                 <li id='view-book-type'> 
                                     <span className='view-book-type-badge-custom'>Literature</span>
                                     <span className='view-book-type-badge-custom'>Novel</span>
                                 </li>
                                 <li id='view-book-description'>{BookDetails['BookDescription']}</li>
-                                <li id='view-book-read-bt' onClick={this.Read}>READ</li>
                             </ul>
                         </Col>
                     </Row>
