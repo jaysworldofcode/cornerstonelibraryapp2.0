@@ -107,6 +107,12 @@ body{
     -moz-box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
     box-shadow: 7px 5px 16px 1px rgba(0,0,0,0.19);
 }
+#read-book-header{
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-top: 10px
+}
 #view-book-header {
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
@@ -214,16 +220,14 @@ li#view-book-type{
     color: #5c5c5c;
 }
 li#book-view {
-    background-color: #007bff;
     width: 100px;
-    padding: 6px 6px 6px 6px;
-    margin: 10px 10px 10px 0;
-    text-align: center;
-    color: white;
+    margin: 10px 0 0 0;
+    text-align: left;
+    color: #b5b5b5;
     border-radius: 50px;
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
-    font-size: 8px;
+    font-size: 10px;
 }
 #home-new-content img{
     width: 50px;
@@ -404,10 +408,26 @@ div.TopNavContainer {
     border-radius: 25px;
     font-family: 'Rubik', sans-serif;
 }
-.dropdown {
+.points {
+    margin: 10px 10px 0 20px;
+}
+.points p{
+    width: 100px;
+    color: white;
+    padding: 4px 0 4px 0;
+    font-weight: 400;
+    font-size: 12px;
+    border-radius: 25px;
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    background-color: #007bff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.dropdown li{
+    border-color: black solid;
     margin-left: 40px;
     font-family: 'Rubik', sans-serif;
-    font-size: 16px;
+    font-size: 10px;
     font-weight: 200;
     width: 160px;
     text-align: center;

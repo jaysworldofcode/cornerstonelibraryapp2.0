@@ -35,7 +35,7 @@ export default class Books extends React.Component {
                                     <span className='book-type-badge-custom'>Literature</span>
                                     <span className='book-type-badge-custom'>Novel</span>
                                 </li>
-                                <li id='book-view'>GET THIS BOOK</li>
+                                <li id='book-view'>PAGES {BookDetails['TotalPages']} </li>
                             </ul>
                             </Col>
                         </Row>
@@ -56,20 +56,22 @@ export default class Books extends React.Component {
                         <Col className='profile'>
                             <p onClick={this.handleButtonClick}>{new DownloadedIcon().ProfileIcon()}  Howdy, John Doe</p>
                         </Col>
+                        <Col className='points'>
+                            <p>$10,000</p>
+                        </Col>
                     </Row>
                     <Row>
                     <Col>
                         {this.state.open && (
                             <div class="dropdown">
                             <ul>
-                                <li>MY POINTS</li>
                                 <li>LOGOUT</li>
                             </ul>
                             </div>
                         )}
                         </Col>
                     </Row>
-                    <Row style={{marginTop:'80px'}}>
+                    <Row style={{marginTop:'10px'}}>
                         <Col>
                             <p className='navTitle'>Bookshelf</p>
                         </Col>

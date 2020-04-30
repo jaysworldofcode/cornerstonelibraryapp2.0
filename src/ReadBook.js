@@ -17,7 +17,8 @@ export default class ReadBook extends React.Component {
 
         this.state = {
             currentPage: 1,
-            totalPages: 0
+            totalPages: 0,
+            bookTitle: ''
         }
         this.ViewBook = this.ViewBook.bind(this);
     };
@@ -40,8 +41,9 @@ export default class ReadBook extends React.Component {
         }
     }
     componentDidMount() {
-        const data = require('./Book/pagtulunan/info.json');
+        const data = require('./Book/'+this.props.BookPath+'/info.json');
         this.setState({ totalPages: data['TotalPages'] });
+        this.setState({ bookTitle: data['BookTitle'] });
 
         const options = {
             autoClose: 2000,
@@ -53,8 +55,6 @@ export default class ReadBook extends React.Component {
             draggable: true,
             closeOnClick: true
         };
-
-
         toast.success("PRESS EDGES TO NAVIGATE NEXT/PREVIOUS PAGES!", options);
     }
     render() {
@@ -62,8 +62,11 @@ export default class ReadBook extends React.Component {
             <div style={{backgroundColor:'white'}}>
                 <div style={{backgroundColor:'white'}}>
                     <Row onClick={this.ViewBook}>
-                        <Col className='back-button'>
+                        <Col className='back-button' xs={2} md={2} xl={2}>
                             <span>{new DownloadedIcon().BackIcon()}</span>
+                        </Col>
+                        <Col xs={10} md={10} xl={10}>
+                            <p id='read-book-header'>{this.state.bookTitle}</p>
                         </Col>
                     </Row>
                     <ToastContainer autoClose={4000} className='tester' />
