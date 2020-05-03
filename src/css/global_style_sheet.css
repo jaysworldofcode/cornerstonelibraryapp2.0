@@ -456,9 +456,11 @@ div.TopNavContainer {
 #review {
     margin-right: 20px;
     margin-left: 20px;
-    border: solid #f7f7f7;
     border-width: 1px 0 1px 0;
-    padding: 4px 0 4px 0;
+    padding: 8px 4px 4px 8px;
+    -webkit-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.09);
+    -moz-box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.09);
+    box-shadow: 6px 7px 12px -6px rgba(0,0,0,0.09);
 }
 #view-book-reviews-title {
     padding-left: 20px;
