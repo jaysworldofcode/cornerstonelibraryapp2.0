@@ -472,4 +472,5 @@ div.TopNavContainer {
     font-weight: 600;
     text-align: justify;
     text-justify: inter-word;
+    border-radius: 10px;
 }
