@@ -24,7 +24,7 @@ export default class Books extends React.Component {
             const BookDetails = require('./Book/'+path+'/info.json');
             return    <Row id='book' onClick={this.ViewBook.bind(this, path)}>
                             <Col xs={4} md={2} xl={1} id='book-cover'>
-                                <img src={require('./Book/'+path+'/cover.png')} alt="cover" className='center' style={{width:'80', height:'120px'}}/>
+                                <img src={require('./Book/'+path+'/cover.png')} alt="cover" className='center' style={{width:'70px', height:'100px'}}/>
                             </Col>
                             <Col xs={8} md={10} xl={11}>
                             <ul>
@@ -34,7 +34,7 @@ export default class Books extends React.Component {
                                     <span className='book-type-badge-custom'>LITERATURE</span>
                                     <span className='book-type-badge-custom'>NOVEL</span>
                                 </li>
-                                <li id='book-view'>PAGES {BookDetails['TotalPages']} </li>
+                                <li id='book-view'><i>PAGES</i> {BookDetails['TotalPages']} </li>
                             </ul>
                             </Col>
                         </Row>

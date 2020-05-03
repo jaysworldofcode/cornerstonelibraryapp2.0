@@ -474,3 +474,7 @@ div.TopNavContainer {
     text-justify: inter-word;
     border-radius: 10px;
 }
+#book-cover {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
