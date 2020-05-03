@@ -25,7 +25,7 @@ export default class Books extends React.Component {
             return    <Row id='book' onClick={this.ViewBook.bind(this, path)}>
                             {/*style={{marginTop:this.state.height}}*/}
                             <Col xs={4} md={2} xl={1} id='book-cover'>
-                            <img src={require('./Book/'+path+'/cover.png')} alt="cover" className='center' style={{width:'80', height:'120px'}}/>
+                                <img src={require('./Book/'+path+'/cover.png')} alt="cover" className='center' style={{width:'80', height:'120px'}}/>
                             </Col>
                             <Col xs={8} md={10} xl={11}>
                             <ul>
