@@ -49,7 +49,7 @@ export default class ViewBook extends React.Component {
                                     <span id='read-book-read-bt' onClick={this.Read}>READ NOW for ({BookDetails['Points']}) points</span>
                                 </li>
                                 <li id='view-book-header'>{BookDetails['BookTitle']}</li>
-                                <li id='view-book-writer'>Author: {BookDetails['Writer']}</li>
+                                <li id='view-book-writer'><i>Author: {BookDetails['Writer']}</i></li>
                                 <li id='view-book-type'> 
                                     <span className='view-book-type-badge-custom'>LITERATURE</span>
                                     <span className='view-book-type-badge-custom'>NOVEL</span>
